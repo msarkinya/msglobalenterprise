@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryam Sarkin'ya — My First Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+  <h1>
+    Hi, I’m Maryam — <span id="typing"></span> ✨
+  </h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="cv.pdf" download>Download my CV</a>
+  </nav>
+ 
+<button id="darkModeToggle" class="toggle-btn">
+  <span class="icon">🌙</span>
+</button>
+<header class="hero">
+  <div class="hero-content">
+    <img src="my photo.png" alt="Your Name" class="profile-pic" />
+    <h1>Hello, I'm <span class="highlight">Maryam</span></h1>
+    <p class="tagline">Aspiring Web Developer & AI Enthusiast</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </div>
+</header>
+<section id="projects" class="projects">
+  <h2><i class="fas fa-project-diagram"></i>My Projects</h2>
+  <div class="project-list">
+    <div class="project-card">
+      <h3>🌐 Personal Portfolio</h3>
+      <p>A responsive portfolio website showcasing my skills, projects, and contact info.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>💻 Web App Example</h3>
+      <p>A sample web application built during my learning journey.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>🤖 AI Experiment</h3>
+      <p>My first step into AI development — a simple machine learning demo.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+</section>
+
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2> 
+      <div class="About-grid">
+        <div class="About-card">
+          <p>Welcome to my portfolio! I’m Maryam Sarkin'ya, a budding web developer passionate about creating beautiful and functional websites. I’m currently learning both front-end and back-end development, and I’m excited to share my journey with you.</p>
+      </div>
+      
+      <div class="About-card">
+      <p>Hello! I’m learning front-end and back-end web development step by step.</p>
+      </div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<a href="cv.pdf" download>
+  <button class="download-btn" style="background-color: #475a48; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+    <i class="fas fa-download"></i> Download My CV
+  </button>
+</a>
+    </section>
+
+  <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <p>Email: msaidusarkinya@gmail.com</p>
+      <p>Phone Number: 07030501357</p>
+      <p>Home Address: Karkasara Janbulo</p>
+      <button onclick="showInput()"> Message Me </button>
+
+  <div id="messageBox">
+    <input type="text" id="userMessage" placeholder="Type your message here">
+    <button onclick="submitMessage()">Submit</button>
+  </div>
+  <script>
+    function showInput() {
+      document.getElementById('messageBox').style.display = 'block';
+    }
+
+    function submitMessage() {
+      const message = document.getElementById('userMessage').value;
+      if(message) {
+        alert('Message submitted: ' + message);
+        document.getElementById('userMessage').value = '';
+        document.getElementById('messageBox').style.display = 'none';
+      } else {
+        alert('Please enter a message before submitting.');
+      }
+    }
+   </script> 
+      </section>
+      
+    <section id="projects">
+      <h2><i class="fas fa-project-diagram"></i> My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">Portfolio Website</div>
+        <div class="project-card">To-Do List App</div>
+        <div class="project-card">Blog Platform</div>
+        <div class="project-card">E-commerce Site</div>
+        <div class="project-card">Weather App</div>
+        <div class="project-card"> Azaan Time App</div>
+      </div>
+    </section>
+    
+    <section id="projects">
+  <h2><i class="fas fa-project-diagram"></i>My Flex Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">Portfolio Website</div>
+    <div class="project-card">To-Do List App</div>
+    <div class="project-card">Blog Platform</div>
+    <div class="project-card">AI Chatbot</div>
+  </div>
+</section>
+
+    <section id="skill">
+      <h2><i class="fas fa-code"></i> My Skills</h2>
+      <div class="skills-container">
+        <div class="skills">HTML</div>
+        <div class="skills">CSS</div>
+        <div class="skills">JavaScript</div>
+        <div class="skills">Python</div>
+      </div>
+    </section>
+    <section id="skills">
+  <h2><i class="fas fa-code"></i> My Flex Skills</h2>
+  <div class="skills-container">
+    <div class="skill">Web Development</div>
+    <div class="skill">UI/UX Design</div>
+    <div class="skill">AI & Machine Learning</div>
+    <div class="skill">Cybersecurity</div>
+  </div>
+</section>
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2 style="text-decoration: underline; font-size: larger;">Testimonials</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Maryam is a fast learner and very creative. She built her first portfolio in just a few days!"</p>
+        <h4 style="text-decoration: underline;">- Coach Instructor</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Working with Maryam is always inspiring. She brings fresh ideas and dedication."</p>
+        <h4 style="text-decoration: underline;">- Teammate</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Her passion for web development and AI is amazing. She’ll go far!"</p>
+        <h4 style="text-decoration: underline;">- Mentor</h4>
+      </div>
+    </div>
+  </section>
+<script src="script.js"></script>
+  </main>
+
+  <footer>
+    <small>© 2025 Maryam Sarkin'ya</small>
+  <a href="https://www.facebook.com/Maryamsaid" target="_blank">
+  <img src="download.png" alt="Follow me on Facebook" style="width:50px; height:auto;">
+</a>
+
+<a href="https://www.instagram.com/maryamsaidusarkin" target="_blank">
+  <img src="download.jpg" alt="Follow me on instagram" style="width:50px; height:auto;">
+</a>
+
+<a href="https://www.WhatsApp.com/ms" target="_blank">
+  <img src="whatsapp.jpg" alt="Follow me on whatsapp" style="width:50px; height:auto;">
+</a>
+
+  </footer>
+  
+</body>
+</html>
